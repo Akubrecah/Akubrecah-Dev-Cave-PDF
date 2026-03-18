@@ -11,10 +11,6 @@ const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 const nextConfig = {
   // Enable static export for deployment flexibility
   output: 'export',
-  
-  // Set basePath and assetPrefix for GitHub Pages repo-based URL
-  basePath: '/Akubrecah-Dev-Cave-PDF',
-  assetPrefix: '/Akubrecah-Dev-Cave-PDF/',
 
   // Webpack configuration for WASM modules
   webpack: (config, { isServer, webpack }) => {
