@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import '@/app/globals.css';
 
 export const metadata: Metadata = {
-  title: 'PDFCraft - Professional PDF Tools',
+  title: 'Akubrecah Dev Cave PDF - Professional PDF Tools',
   description: 'Free online PDF tools for merging, splitting, compressing, and converting PDF files. All processing happens in your browser for maximum privacy.',
   icons: {
     icon: '/favicon.svg',
@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="dark" suppressHydrationWarning>
       <head>
         <meta name="color-scheme" content="light dark" />
         <style dangerouslySetInnerHTML={{ __html: 'html{scrollbar-gutter:stable}' }} />

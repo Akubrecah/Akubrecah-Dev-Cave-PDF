@@ -2,36 +2,36 @@
 
 /* PDFCraft Design System - CSS Variables for Theming */
 :root {
-  /* Primary Colors - Deep Blue/Indigo for trust and modern tech feel */
-  --color-primary: 226 71% 55%; /* #3b82f6 - slightly more vibrant */
+  /* Primary Colors - Brand Red for KRA */
+  --color-primary: 356 96% 46%; /* #E30613 */
   --color-primary-foreground: 0 0% 100%;
-  --color-primary-hover: 226 71% 45%;
+  --color-primary-hover: 0 85% 26%; /* #7B0A0A (Brand Crimson) */
   
   /* Secondary Colors - Slate for neutral elements */
   --color-secondary: 215 20% 90%;
   --color-secondary-foreground: 215 25% 15%;
   --color-secondary-hover: 215 20% 80%;
   
-  /* Accent Colors - Teal/Cyan for highlights */
-  --color-accent: 172 66% 50%;
-  --color-accent-foreground: 0 0% 100%;
+  /* Accent Colors - Brand Yellow */
+  --color-accent: 47 100% 48%; /* #F5C200 */
+  --color-accent-foreground: 0 0% 7%; /* #111111 */
   
-  /* Background Colors */
-  --color-background: 210 40% 98%; /* Slightly off-white for depth */
-  --color-foreground: 222 47% 11%;
+  /* Background Colors - Match Dark Theme for "Cave" feel */
+  --color-background: 0 0% 7%; /* #111111 */
+  --color-foreground: 0 0% 100%; /* #FFFFFF */
   
   /* Muted Colors */
-  --color-muted: 210 40% 96%;
-  --color-muted-foreground: 215 16% 47%;
+  --color-muted: 0 0% 4%; /* #0A0A0A */
+  --color-muted-foreground: 0 20% 68%; /* #BEA0A0 */
   
   /* Card Colors */
-  --color-card: 0 0% 100%;
-  --color-card-foreground: 222 47% 11%;
+  --color-card: 0 0% 0%;
+  --color-card-foreground: 0 0% 100%;
   
   /* Border Colors */
-  --color-border: 214 32% 91%;
-  --color-input: 214 32% 91%;
-  --color-ring: 226 71% 55%;
+  --color-border: 0 0% 20%;
+  --color-input: 0 0% 20%;
+  --color-ring: 356 96% 46%; /* Brand Red */
   
   /* Destructive Colors */
   --color-destructive: 0 84% 60%;
@@ -80,29 +80,29 @@
 
 /* Dark Mode Theme */
 .dark {
-  --color-primary: 226 71% 60%;
-  --color-primary-foreground: 222 47% 11%;
-  --color-primary-hover: 226 71% 70%;
+  --color-primary: 356 96% 46%; /* #E30613 */
+  --color-primary-foreground: 0 0% 100%;
+  --color-primary-hover: 0 85% 26%; /* #7B0A0A */
   
-  --color-secondary: 215 20% 20%;
-  --color-secondary-foreground: 210 40% 98%;
-  --color-secondary-hover: 215 20% 30%;
+  --color-secondary: 0 0% 15%;
+  --color-secondary-foreground: 0 0% 100%;
+  --color-secondary-hover: 0 0% 25%;
   
-  --color-accent: 172 66% 50%;
-  --color-accent-foreground: 222 47% 11%;
+  --color-accent: 47 100% 48%; /* #F5C200 */
+  --color-accent-foreground: 0 0% 7%;
   
-  --color-background: 222 47% 7%; /* Darker background for more contrast */
-  --color-foreground: 210 40% 98%;
+  --color-background: 0 0% 7%; /* #111111 (Brand Black) */
+  --color-foreground: 0 0% 100%; /* #FFFFFF (Brand White) */
   
-  --color-muted: 217 33% 13%;
-  --color-muted-foreground: 215 20% 65%;
+  --color-muted: 0 0% 4%; /* #0A0A0A (Section Alt BG) */
+  --color-muted-foreground: 0 20% 68%; /* #BEA0A0 (Muted Text) */
   
-  --color-card: 222 47% 10%;
-  --color-card-foreground: 210 40% 98%;
+  --color-card: 0 0% 0%; /* Background opacity handled in components/glass */
+  --color-card-foreground: 0 0% 100%;
   
-  --color-border: 217 33% 15%;
-  --color-input: 217 33% 15%;
-  --color-ring: 226 71% 60%;
+  --color-border: 0 0% 20%;
+  --color-input: 0 0% 20%;
+  --color-ring: 356 96% 46%;
 }
 
 /* Base Styles */
@@ -295,3 +295,19 @@ body {
 .scroll-smooth { scroll-behavior: smooth; }
 .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
 .scrollbar-hide::-webkit-scrollbar { display: none; }
+
+/* KRA Custom Brand Utilities */
+.btn-primary {
+  background: linear-gradient(135deg, #E30613 0%, #7B0A0A 100%);
+  box-shadow: 0 4px 14px rgba(227, 6, 19, 0.39);
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 600;
+}
+
+.glass-panel {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+}
