@@ -13,8 +13,8 @@ const nextConfig = {
   output: 'export',
   
   // Set basePath and assetPrefix for GitHub Pages repo-based URL
-  basePath: '/pdfcraft',
-  assetPrefix: '/pdfcraft/',
+  basePath: '/Akubrecah-Dev-Cave-PDF',
+  assetPrefix: '/Akubrecah-Dev-Cave-PDF/',
 
   // Webpack configuration for WASM modules
   webpack: (config, { isServer, webpack }) => {
